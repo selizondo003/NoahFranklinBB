@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    box-sizing: border-box;}
+    
+article {
+    max-width: 75rem;
+    margin: 0 auto 2rem 0;
+    padding: 1rem;
+}
+/*styling the img header*/
+.logo {
+    float: left;
+    width: 150px;
+}
+figure img{
+    max-width: 500px;
+    margin: .5rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/*styling the navigation*/
+.main-nav {
+    list-style: none;
+    padding: 1rem;
+    display: block;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.contact-nav{
+    list-style: none;
+    padding: 1rem;
+    display: block;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+/*status indicator for navigation */
+#home .home-pg, #about .about-pg, #accommodations .accommodations-pg, #captain .captain-pg, #contact .contact-pg, #specials .specials-pg{
+    color: #000000;
+    font-weight:bolder;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+
+.main-nav a[href] {
+    font-weight: bold;
+    text-decoration: none;
+    color: #063a2a;
+}
+
+/*styling hover state and drop menu */
+  
+  .main-nav a:hover {
+    color: rgb(182, 226, 209);
+  }
+  
+/* realtive is not a value of display-according to validation*  
+  .drop-list {
+    display: relative;
+  }
+  */
+  
+  .drop-list:hover .sub-nav {
+    /* use either opacity OR display block */
+    /*//opacity: 1;*/
+    display: block;
+  }
+  
+  .sub-nav {
+    transition: opacity 0.35s ease;
+    /* use either opacity OR display none */
+    /*//opacity: 0;*/
+    display: none;
+    padding: 1rem;
+    position: absolute;
+    background:rgb(255, 250, 250);
+    list-style:none;
+  }
+  
+  .sub-nav>li {
+    padding:.25rem;
+  }
+  /*styling horizontal line breaks*/
+    hr{
+        border: 2px solid #005f94;
+}
+
+
+header{
+    background-color: #85AED6;
+    padding: 2rem;
+    font-family: 'Fira Sans', 'sans-serif';;
+}
+
+.disclaimer{
+    background-color: #85AED6;
+    padding: 2rem;
+    font-family: 'Fira Sans', 'sans-serif';;
+}
+
+.footer{
+    padding: 2rem;
+    font-family: 'Fira Sans', 'sans-serif';
+}
+
+h1,h2,h3{
+    text-align: center;
+    font-family: 'Cormorant Infant','serif';
+}
+
+h1{
+    font-size: 49pt;
+}
+h2{
+    font-size: 28pt ;
+    padding: 1rem;
+}
+h3{
+    font-size: 25pt;
+    padding: 1rem;
+}
+
+p, h4{
+    font-family: 'Fira Sans', 'sans-serif';
+    font-size: 16pt;
+}
+/*styling button for all pages*/
+
+.button{
+    background-color: #657D5F;
+    padding: 0.4rem;
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    display: block;
+}
+
+/*styling grid for footer*/
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+    margin: 1rem;
+    padding: 2rem; 
+}
+
+
+/*----------------styling home page------------------------*/
+#home p{
+    font-family: 'Fira Sans', 'sans-serif';
+    font-size: 16pt;
+    padding: 1rem;
+}
+
+/*-----------------accommodations page--------------------*/
+.main-house, .carriage-house{
+    font-family: 'Fira Sans', 'sans-serif';
+    align-self: auto;
+}
+
+.card h4, .card img, .card p{
+    padding: 2px;
+}
+
+.card {
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+/*styling grid for accommodations page */
+
+.carriage-house{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    
+}
+.main-house{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+}
+
+.main-house div, .carriage-house div{
+    border: 1px solid darkblue;
+    text-align: center;
+    background-color: #CDEAF5;
+} 
+
+.carriage-house img, .main-house img {
+    width:100%;
+    background-color: #005F94;
+    margin: 1rem;
+}
+
+/*----------styling about------------*/
+#about p{
+    font-family: 'Fira Sans', 'sans-serif';
+    font-size: 16pt;
+    padding: 1rem;
+}
+.about-img5, .about-img4, .about-img3,  .about-img1{
+    max-width: 100%;
+    padding: 1px;
+    margin:1px;
+}
+
+.testimonials p{
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 2px black solid;
+    box-shadow: 10px 5px 5px grey;
+}
+/*----------styling specials page----------------*/
+.specials-grid a[href] {
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: #063a2a;
+    font-family:cursive;
+}
+.specials-grid a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #44ac8c;
+    font-family: cursive;
+}
+#specials section{
+    padding:1rem;
+    margin:1rem;
+    border: black solid 2px;
+}
+
+/*-----------styling contact page----------------*/
+input[type=text]{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgb(154, 167, 206);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgb(154, 167, 206);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgb(154, 167, 206);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  #contact button {
+    width: 100%;
+    background-color: #164b18;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    box-sizing:border-box;
+  }
+  
+  #contact button:hover {
+    background-color: #81b483;
+  }
+  
+  .contact-form{
+    border-radius: 8px;
+    background-color: #85AED6;
+    margin:10px;
+  }
+
+/*---------room pages ------*/
+
+.amenities li, .features li{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 2px;
+}
+.amenities ul, .features ul{
+    margin: 1rem;}
+
+.room-description p{
+    text-align: center;
+    padding:2px;
+    
+}
+
+/*-------------
+--------------
+-------------for larger screens--------*/
+@media screen and (min-width: 700px) {
+
+    article {
+
+        max-width: 70rem;
+        margin: 0 auto 0 2rem;
+    }
+    /*styling the navigation*/
+.main-nav {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.contact-nav{
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+    /*----------------styling home page------------------------*/
+    .home-main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem 2rem;
+        align-items: center;
+    }
+
+    .home-header {
+        grid-column: 1/5;
+    }
+
+    .home-img1 {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .intro{
+        grid-column: 3/5;
+        grid-row:2;
+    }
+
+    .rooms-suites{
+        grid-column: 1/3;
+        grid-row: 3;
+        margin: 0;
+    }
+
+    .home-img3{
+        grid-column: 3/5;
+        grid-row: 3;
+        margin: 0;
+    }
+    /*img2 is not going to appear*/
+    .home-img2{
+        display:none;
+    }
+    .home-img4{
+        grid-column: 1/3;
+        grid-row: 4;
+        margin: 0;
+    }
+
+    .dining-specials{
+        grid-column: 3/5;
+        grid-row: 4;
+        margin: 0;
+    }
+
+    .area{
+        grid-column: 1/3;
+        grid-row: 5;
+        margin: 0;
+    }
+
+    .home-img5{
+        grid-column: 3/5;
+        grid-row:5;
+        margin:0;
+    }
+    
+
+    /*----------styling grid for accommodations page----------*/
+    .carriage-house{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        
+    }
+    .main-house{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*styling grid for specials page-----------------*/
+    .specials-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem 2rem;
+    }
+
+    .s-header {
+        grid-column: 1/5;
+    }
+
+    .summer-four-special {
+        grid-column: 1/3;
+        grid-row: 2;
+        
+    }
+
+    .explore-special{
+        grid-column: 3/5;
+        grid-row: 2;
+    }
+    .sandwich-special{
+        grid-column: 1/3;
+        grid-row: 3;  
+    }
+
+    .summer-three-special{
+        grid-column: 3/5;
+        grid-row: 3;
+    }
+    .summer-two-special{
+        grid-column: 1/3;
+        grid-row: 4;
+    }
+    .julia-special{
+        grid-column: 3/5;
+        grid-row: 4;
+    }
+
+    .xmas-special{
+        grid-column: 1/3;
+        grid-row: 5;
+    }
+
+    .nye-special{
+        grid-column: 3/5;
+        grid-row: 5;
+    }
+    .mom-special{
+        grid-column: 1/3;
+        grid-row: 6;
+    }
+
+    /*--------------contact page----------*/
+    .contact-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+        margin: 1rem;
+        padding: 2rem; 
+        align-items:flex-start;
+    }
+
+
+}
+@media screen and (min-width: 900px) {
+
+    article {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    
+}
